@@ -1,16 +1,16 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
 /*
- * Remove any $ Serialise the URL params (object) to string
+ * Soft wrap the string in multiple lines using parameter length:
  *
  * Usage:
- *   value | stringToList
+ *   value | wordWrap
  * Example:
  *  1. In Javascript:
- *      let wrapString = new WordWrap().transform(string);
+ *      let wrapString = new WordWrap().transform(string, 30);
  *
  *  2. In HTML:
- *      {{ string | wordWrap }}
+ *      {{ string | wordWrap | 30 }}
 */
 @Pipe({name: 'wordWrap'})
 
