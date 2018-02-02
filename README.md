@@ -67,7 +67,7 @@
     {{'02/14/2018' | datex:'shortDate' }}
     ```
 
-   Output:
+    Output:
     ```
     14/02/2018
     ```   
