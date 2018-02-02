@@ -51,4 +51,24 @@
     ```
     dd/MM/y
     ```
+ 3. Datex
+   >> Pipe to use the moment formatter instead of the Angular built-in one. <br/>
+ 
+   Example:
+
+    In Javascript:
+    ```
+    let oldDate = '02/14/2018';
+    let newDate = new DatexPipe().transform(oldDate);
+    console.log('newDate', newDate);
+    ```
+    In HTML:
+    ```
+    {{'02/14/2018' | datex:'shortDate' }}
+    ```
+
+   Output:
+    ```
+    14/02/2018
+    ```   
     
