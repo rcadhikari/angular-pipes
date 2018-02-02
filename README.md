@@ -52,9 +52,9 @@
     dd/MM/y
     ```
  3. Datex
-   >> Pipe to use the moment formatter instead of the Angular built-in one. <br/>
+    >> Pipe to use the moment formatter instead of the Angular built-in one. <br/>
  
-   Example:
+    Example:
 
     In Javascript:
     ```
