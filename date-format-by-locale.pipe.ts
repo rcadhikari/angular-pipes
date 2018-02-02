@@ -18,7 +18,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class SetDateFormatByLocalePipe implements PipeTransform {
     transform(): any {
 
-        var locale = navigator.language || 'en-US';
+        var locale = navigator.language || 'en-GB';
 
         // Set Default Date Format to GB;
         let defaultFormat = 'dd/mm/yyyy';
