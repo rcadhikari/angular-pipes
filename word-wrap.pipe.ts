@@ -7,14 +7,14 @@ import { Pipe, PipeTransform } from '@angular/core';
  *   value | wordWrap
  * Example:
  *  1. In Javascript:
- *      let wrapString = new WordWrap().transform(string, 30);
+ *      let wrapString = new WordWrapPipe().transform(string, 30);
  *
  *  2. In HTML:
  *      {{ string | wordWrap | 30 }}
 */
 @Pipe({name: 'wordWrap'})
 
-export class WordWrap implements PipeTransform {
+export class WordWrapPipe implements PipeTransform {
     transform(string: any, charLen:number = 20, delimit: any = '<br/>'): any {
 
         if ( (string == null) || (string.length <= charLen)) {
