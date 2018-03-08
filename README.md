@@ -71,4 +71,23 @@
     ```
     14/02/2018
     ```   
-    
+ 4. MaskNumber
+    >> Pipe to mask the number with comma (,) for thousand separator.<br/>
+ 
+    Example:
+
+    In Javascript:
+    ```
+    let input = '2045500.5';
+    let maskedInput = new MaskNumberPipe().transform(input);
+    console.log('input', maskedInput);
+    ```
+    In HTML:
+    ```
+    {{'2045500.5' | maskNumber }}
+    ```
+
+    Output:
+    ```
+    2,045,500.20
+    ```   
