@@ -91,3 +91,23 @@
     ```
     2,045,500.20
     ```   
+    
+ 5. SafeHtml
+    >> Pipe to avoid stripping the inline style on html text.
+    Example:
+
+    In Javascript:
+    ```
+    let input = '<h1><span style="background-color: #ffff99;">Yello background text</span></h1> <p><span style="color: #ff0000;">Red colored text.</span>'
+    let myHtmlContent = new SafeHtmlPipe().transform(input);
+    ```
+    In HTML:
+    ```
+    <div [innerHtml]="myHtmlContent | safeHtml"></div>
+    ```
+
+    Output:
+    ```
+    Yello background text
+    Red colored text.
+    ```   
